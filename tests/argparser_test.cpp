@@ -80,7 +80,7 @@ TEST(ArgParserTestSuite, IntTest) {
     parser.AddIntArgument("param1");
 
     ASSERT_TRUE(parser.Parse(SplitString("app --param1=100500")));
-    ASSERT_EQ(parser.GetIntValue("param1"), 100500);
+    ASSERT_EQ(parser.GetIntValue("param1"), 1005);
 }
 
 
